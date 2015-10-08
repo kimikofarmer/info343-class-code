@@ -40,3 +40,7 @@ footer {
 .bunny p {
     clear: both;
 }
+
+.svg {
+    max-height: 50px;
+}
