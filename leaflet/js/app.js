@@ -21,11 +21,7 @@ $(function() {
 		L.circleMarker(loc).addTo(map).bindPopUp('Hello');
 	}
 
-	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(function(pos) {
-			createMap([pos.coords.latitude, pos.coords.longitude], 15);
-		});
-	} else {
-		createMap([47.6097, -122.3331], 12);
-	}	
+	createMap([47.6097, -122.3331], 12);
+	createMap([47.7000, -122.3331], 12)
+
 });
